@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="no">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{% if title %}{{ title }} · {% endif %}Kantina</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="{{ url_for('index') }}">Kantina</a>
+      <ul>
+        <li><a href="{{ url_for('index') }}">Hjem</a></li>
+        <li><a href="{{ url_for('meny') }}">Meny</a></li>
+        <li><a href="{{ url_for('varer') }}">Varer</a></li>
+        <li><a href="{{ url_for('kontakt') }}">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer class="site-footer">
+    <p> Kantina · Åpent man–fre 08–15</p>
+  </footer>
+</body>
+</html>
