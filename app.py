@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    return render_template("index.html", title="Forside")
+    return render_template("index.html")
 
 @app.route("/meny")
 def meny():
@@ -12,11 +12,11 @@ def meny():
 
 @app.route("/varer")
 def varer():
-    return render_template("varer.html", title="Varer")
+    return render_template("varer.html")
 
 @app.route("/kontakt")
 def kontakt():
-    return render_template("kontakt.html", title="Kontakt")
+    return render_template("kontakt.html")
 
 if __name__ == "__main__":
     app.run(debug=True)

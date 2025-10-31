@@ -1,19 +1,25 @@
 {% extends "base.html" %}
 {% block content %}
   <h1>Varer</h1>
-  <p>Et lite utvalg av det vi selger hver dag</p>
-  <div class="grid">
-    <article class="card">
+  <p>Et lite utvalg av det vi selger hver dag:</p>
+
+  <div class="varer-container">
+    <div class="vare">
+      <img src="/static/sandwich.jpeg" alt="">
       <h3>Sandwich</h3>
-      <p>Grovt brød, ost & skinke.</p>
-    </article>
-    <article class="card">
+      <p>Grovt brød, ost & kylling.</p>
+    </div>
+
+    <div class="vare">
+      <img src="/static/yoghurt.jpeg" alt="">
       <h3>Yoghurt</h3>
       <p>Med granola og honning.</p>
-    </article>
-    <article class="card">
+    </div>
+
+    <div class="vare">
+      <img src="/static/fruit.jpeg" alt="">
       <h3>Frukt</h3>
-      <p>Epler, bananer, druer m.m.</p>
-    </article>
+      <p>Epler, bananer, druer </p>
+    </div>
   </div>
 {% endblock %}

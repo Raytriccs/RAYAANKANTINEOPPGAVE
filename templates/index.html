@@ -1,7 +1,10 @@
 {% extends "base.html" %}
+
 {% block content %}
-  <h1>Velkommen til Kantina</h1>
-  <p>Her finner du dagens rett, kaffe, og noe godt i bakken.</p>
+  <h1>Akademiet kantina!</h1>
+   <img src="/static/kantina.jpeg" alt=""
+   style="width:700px;border-radius:15px; margin:10px;">
+
   <p>Sjekk <a href="{{ url_for('meny') }}">menyen</a> eller se våre <a href="{{ url_for('varer') }}">varer</a>.</p>
 {% endblock %}
 

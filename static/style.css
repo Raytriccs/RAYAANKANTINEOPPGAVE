@@ -1,42 +1,96 @@
 
 body {
-  background-color: #f0f0f0; 
-  color: #222;              
-  font-family: Arial, sans-serif;
-  margin: 20px;            
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f3f3f3;
+  color: #222;
 }
 
-h1 {
-  color: #003366;           
-  margin-bottom: 10px;
+/* Navigasjonsbar */
+.navbar {
+  background-color: #0a3761;     
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
 }
 
-h2 {
-  color: #005599;            /
-  margin-top: 20px;
-}
-
-p, li {
-  color: #333;              
-  margin-bottom: 8px;
-}
-
-a {
-  color: #0066cc;           
+.nav-logo {
+  color: white;
+  font-size: 1.3rem;
+  font-weight: bold;
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
 }
 
-nav {
-  background-color: #003366;
-  padding: 10px;
-  margin-bottom: 20px;
-}
-
-nav a {
+.nav-links a {
   color: white;
-  margin-right: 15px;
+  text-decoration: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 5px;
+}
+
+.nav-links a:hover {
+  background-color: #144b8a;
+}
+
+
+.container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: white;
+  border-radius: 10px;
+}
+
+h1, h2, h3 {
+  color: #0a3761;
+}
+
+/* Varer*/
+.varer-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.vare {
+  background-color: #f9f9f9;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  text-align: center;
+  padding: 1rem;
+  width: 250px;
+}
+
+.vare img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* - Footer  */
+.site-footer {
+  background-color: #0a3761;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+body {
+  background-color: #f2f2f2;
+  color: #222;
+  font-family: Arial, sans-serif;
+  margin: 0;
 }
